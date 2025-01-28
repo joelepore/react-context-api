@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.posts-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.post-card {
+  max-width: 500px;
+  padding: 1rem;
+}
+
+.post-card-img {
+  width: 100%;
+  aspect-ratio: 21/9;
+  object-fit: cover;
+}
