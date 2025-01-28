@@ -1,6 +1,6 @@
-const PostsPage = () => {
+const PostsPage = ({ children }) => {
   return (
-    <div>PostsPage</div>
+    <div>{children}</div>
   )
 }
 

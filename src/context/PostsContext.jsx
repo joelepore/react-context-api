@@ -3,9 +3,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 const PostsContext = createContext();
 
 const PostsProvider = ({ children, data }) => {
-  const [posts, setPosts] = useState(null);
-
-  useEffect(setPosts(data), []);
+  const [posts, setPosts] = useState(data);
 
   return (
     <PostsContext.Provider value={{ posts }}>
@@ -14,6 +12,6 @@ const PostsProvider = ({ children, data }) => {
   )
 }
 
-const usePostsContext = useContext(PostsContext);
+const usePostsContext = () => useContext(PostsContext);
 
 export { PostsProvider, usePostsContext }
