@@ -1,7 +1,9 @@
-import { usePostsContext } from "../context/PostsContext"
+import { useContext } from "react";
+import { PostsContext } from "../context/PostsContext";
 import PostCard from "./PostCard";
+
 const PostsList = () => {
-  const { posts } = usePostsContext();
+  const { posts } = useContext(PostsContext);
 
   return (
     <div className="posts-list">

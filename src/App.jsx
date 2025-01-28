@@ -7,9 +7,7 @@ import posts from "./data/posts"
 const App = () => {
   return (
     <PostsProvider data={posts}>
-      <PostsPage>
-        <PostsList />
-      </PostsPage>
+      <PostsPage />
     </PostsProvider>
   )
 }

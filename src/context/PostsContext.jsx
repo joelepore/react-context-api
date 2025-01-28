@@ -12,6 +12,4 @@ const PostsProvider = ({ children, data }) => {
   )
 }
 
-const usePostsContext = () => useContext(PostsContext);
-
-export { PostsProvider, usePostsContext }
+export { PostsProvider, PostsContext }

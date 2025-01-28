@@ -1,6 +1,10 @@
+import PostsList from "../components/PostsList"
+
 const PostsPage = ({ children }) => {
   return (
-    <div>{children}</div>
+    <div>
+      <PostsList />
+    </div>
   )
 }
 
